@@ -1,0 +1,725 @@
+@charset "utf-8";
+/*主页背景*/
+/*@author:yiye 2012年冬*/
+body#home #outer {
+	background: url(../img/bg-1.jpg) repeat 50% 0
+}
+body#home #inner {
+	background: url(../img/gradual/line.png) no-repeat 50% 154px;
+}
+body#home #deeper {
+	background: url(../img/bg-ball2.png) no-repeat bottom center
+}
+/**/
+body#home #wrapper {
+	height:674px;
+	max-height: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+/*头部*/
+#masthead{
+	height: 160px;
+	position: relative;
+}
+/*logo*/
+.logo{
+	top:0px;
+	width: 260px;
+	left: 50%;
+	margin-left: -130px;
+	background: url(../img/logo_bg.png) no-repeat 50% 100%;	
+	padding: 10px 0 70px 0;
+	display: block;
+	position: absolute;
+	z-index: 999;
+	-webkit-transition: padding-top .1s ease-in-out;
+	-moz-transition: padding-top .1s ease-in-out;
+	transition: padding-top .1s ease-in-out;
+}
+.logo:hover{
+	padding-top: 50px 
+}
+.logo img{
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+.logo span{
+	letter-spacing: 1px;
+	text-align: center;
+	padding: 0 0 0 8px;
+	display:  block;
+	text-transform: uppercase;
+	font-size: 17px;
+	color: #6CDFFF;
+	margin-top: 10px;
+	font-weight: 900;
+}
+/*导航栏*/
+#nav{
+	width: 100%;
+	height: 190px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	display: block;
+}
+#nav ul{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+#nav ul li{
+	width: 120px;
+	background: url(../img/nav-ribbon.png) no-repeat;
+	background-position: 50% -190px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	cursor: pointer;
+	-webkit-transition: background-position .3s ease-in-out;
+	-moz-transition: background-position .3s ease-in-out;
+	-o-transition: background-position .3s ease-in-out;
+	transition: background-position .3s ease-in-out;
+}
+#nav ul li:hover{
+	background-position: 50% 0px;
+}
+#nav ul li a{
+	line-height: 1.1em;
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	color: white;
+	font-size: 1.2em;
+	font-family: '黑体';
+	text-transform: uppercase;
+	font-weight: 400;
+	background: url(../img/nav-ico.png) no-repeat 0 -15px;
+	-webkit-transition: background-position .3s ease-in-out .2s;
+	-moz-transition: background-position .3s ease-in-out .2s;
+	-o-transition: background-position .3s ease-in-out .2s;
+	transition: background-position .3s ease-in-out .2s;
+}
+#nav ul li a span {
+	display: block;
+	padding: 95px 0 0 0;
+	
+}
+#nav ul li a strong{
+		display: block;
+		font-size: 0.7em;
+		color: #6BDFFF;
+		font-weight: 400;
+		margin-top: 5px;
+		letter-spacing: 0.1em;
+	}
+#nav ul .about{
+	left: 0;
+}
+#nav ul .about a{
+	background-position: 0 -15px;
+}
+#nav ul .about a:hover{
+	background-position: -120px -15px;
+}
+
+#nav ul .news{
+	left: 120px;
+}
+#nav ul .news a{
+	background-position: -240px -15px;
+}
+#nav ul .news a:hover{
+	background-position: -360px -15px;
+}
+
+#nav ul .works{
+	left: 240px;
+}
+#nav ul .works a{
+	background-position: -480px -15px;
+}
+#nav ul .works a:hover{
+	background-position: -600px -15px;
+}
+
+#nav ul .models{
+	right: 240px;
+}
+#nav ul .models a{
+	background-position: -720px -15px;
+}
+#nav ul .models a:hover{
+	background-position: -840px -15px;
+}
+
+#nav ul .groups{
+	right: 120px;
+}
+#nav ul .groups a{
+	background-position: -960px -15px;
+}
+#nav ul .groups a:hover{
+	background-position: -1080px -15px;
+}
+#nav ul .teams{
+	right: 0;
+}
+#nav ul .teams a{
+	background-position: -1200px -15px;
+}
+#nav ul .teams a:hover{
+	background-position: -1320px -15px;
+}
+/*大图片设计的feature*/
+#feature{
+	width: 800px;
+	height: 450px;
+	overflow: hidden;
+	position: absolute;
+	top: 200px;
+	left:80px;
+	/*background-color: red;*/
+}
+
+/*图片效l layout*/
+ 
+/* set border-box so that percents can be used for width, padding, etc (personal preference) */
+.cycle-slideshow, .cycle-slideshow * { 
+	-webkit-box-sizing: border-box;
+	 -moz-box-sizing: border-box; 
+	 box-sizing: border-box;
+	  }
+
+
+/*.cycle-slideshow { 
+	width: 100%; min-width: 960px;
+	 max-width: 960px; margin: 10px auto; 
+	 padding: 0; 
+	 position: relative;
+ }*/
+
+/* slideshow images (for most of the demos, these are the actual "slides") */
+.cycle-slideshow img { 
+    /* 
+    some of these styles will be set by the plugin (by default) but setting them here
+    helps avoid flash-of-unstyled-content
+    */
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 450px ;
+    padding: 0; 
+    display: block;
+}
+
+/* in case script does not load */
+.cycle-slideshow img:first-child {
+    position: static; 
+    z-index: 100;
+}
+/*文字*/
+.cycle-overlay.custom {
+text-align: right;
+}
+.left{
+	float: left;
+}
+/* overlay */
+.cycle-overlay { 
+    font-family: tahoma, arial;
+    position: absolute; bottom: 0; width: 100%; z-index: 600;
+    background: black; color: white; padding: 15px; opacity: .5;
+}
+
+
+/*图片layout效果结束*/
+/*大图片faeture结束*/
+/*文字的feature*/
+#feature2{
+	width: 100%;
+	height: 465px;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 250px;
+	text-align: center;
+	/*background-color: blue;*/
+}
+#feature2 .meddiaSlide h2{
+	text-indent: -9999em;
+	margin: 100px 0 55px 0;
+	height: 180px;
+	font-family: "黑体";
+	color:white;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1em;
+}
+#feature2 h2 b{
+	font-size: 1.1em;
+	color: #6CDFFF;
+	font-weight:100;
+	font-family: "黑体";
+}
+#feature2 h2 strong{
+	font-size: 6em;
+	letter-spacing: -1px;
+	line-height: 1.1em;
+	color: white;
+	font-weight: 300;
+	display: block;
+	margin: 0 0 10px 0;
+	font-family: "黑体";
+	text-shadow:3px 3px 0 rgba(0,0,0,.3);
+}
+#feature2 span{
+	font-size: 0.9em;
+	display: block;
+	color: #6CDFFF;
+	font-weight: 400;
+	letter-spacing: 1px;
+	font-family: "黑体";
+}
+/*文字feature结束*/
+/*slidenav*/
+#slidenav{
+	width: 120px;
+	position: absolute;
+	top:480px;
+	text-align: center;
+	left: 50%;
+	margin-left: -60px;
+	z-index: 99;
+}
+#slidenav a{
+	width: 13px;
+	height: 13px;
+	background: url(../img/dot2.png) no-repeat 0px 0px;
+	cursor: pointer;
+	margin: 0 0 0 5px;
+	display: inline-block;
+	zoom:1;
+	text-indent: -9999px;
+}
+#slidenav a.activeSlide{
+	background-position:0px -12px;
+	cursor: default;
+}
+
+#slidenav a:first-child{
+	margin: 0;
+};
+#slidenav a:hover{	
+	background-position: 20px -19px;
+}
+/*赛事*/
+#competition{
+	width: 100%;
+	height: auto;
+	background: url(../img/zeri/bg-r.jpg) repeat;
+	position: relative;
+}
+#competition .gradual{
+	width: 100%;
+	height: 125px;
+	background: url(../img/zeri/grayLine.png) repeat-x 0 0;
+}
+#competition .gradual .gradualTop{
+	width: 100%;
+	height: 2px;
+	background: url(../img/zeri/underEarthRep.gif) repeat-x;
+}
+#competition .gradual .gradualCenter{
+	width: 764px;
+	height: 125px;
+	margin: auto;
+	background: url(../img/zeri/c1.png) no-repeat 0px -2px;
+	text-align: center;
+	font-size: 2em;
+}
+.gradual .gradualCenter span{
+	display: inline-block;
+	font: 1.6em "微软雅黑";
+	color: #e7e7e7 ;
+	margin-top: 45px;
+	text-shadow:0px 0px 6px #000
+}
+#competition .date{
+	width: 410px;
+	height: 90px;
+	/*margin: auto;*/
+	position: absolute;
+	left: 50%;
+	margin-left: -205px;
+	top: -44px;
+	/*background: red;*/
+}
+#competition .date ul{	
+	width: 100%;
+	height: 100%;
+	position: relative;
+
+}
+#competition .date ul li{
+	width: 90px;
+	background: url(../img/zeri/circle.png) no-repeat;
+	height: 100%;
+	position: absolute;
+	top: 0;
+}
+#competition .date ul li span{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url(../img/zeri/zero.png) no-repeat ;
+	-webkit-transition: background-position .3s ease-in .2s;
+	-moz-transition: background-position .3s ease-in .2s;
+	-o-transition: background-position .3s ease-in .2s;
+	transition: background-position .3s ease-in .2s;
+}
+#competition .date ul .date1{
+	left: 0;
+}
+#competition .date ul .date2{
+	left: 100px;
+}
+#competition .date ul .date3{
+	right:100px;
+}
+#competition .date ul .date4{
+	right: 0;
+}
+#competition .date ul .date5{
+	width: 18px;
+	height: 18px;
+	top: 70px;
+	left: 50%;
+	margin-left: -9px;
+	background: url(../img/dot2.png) no-repeat 0 -26px;
+}
+/*比赛内容*/
+#competition .sumwrap{
+	width: 1000px;
+	height: 160px;
+	margin: auto;
+	margin-top: 40px;
+	/*background: red;*/
+	position: relative;
+}
+.sumwrap .pre{
+	width: 28px;
+	position: absolute;
+	height: 68px;
+	top: 50%;
+	margin-top: -34px;
+	left: 0;
+	cursor: pointer;
+	background: url(../img/zeri/goLeft.png) no-repeat 0 0;
+	/*-webkit-transition: background-position .3s ease-in-out .2s;
+	-moz-transition: background-position .3s ease-in-out .2s;
+	-o-transition: background-position .3s ease-in-out .2s;
+	transition: background-position .3s ease-in-out .2s;*/
+}
+.sumwrap .pre:hover{
+	background: url(../img/zeri/goLeft.png) no-repeat -28px 0;
+}
+.sumwrap .next{
+    width: 28px;
+	position: absolute;
+	height: 68px;
+	top: 50%;
+	margin-top: -34px;
+	right: 0;
+	cursor: pointer;
+	background: url(../img/zeri/goRight.png) no-repeat -28px 0;
+	/*-webkit-transition: background-position .3s ease-in-out .2s;
+	-moz-transition: background-position .3s ease-in-out .2s;
+	-o-transition: background-position .3s ease-in-out .2s;
+	transition: background-position .3s ease-in-out .2s;*/
+}
+.sumwrap .next:hover{
+	background: url(../img/zeri/goRight.png) no-repeat 0px 0;
+}
+
+.sumwrap .slide-box{
+	position: absolute;
+	width: 900px;
+	height: 100%;
+	/*left: 50px;*/
+	left: 50%;
+	margin-left: -450px;
+	position: relative;
+}
+.slide-box .slide-item{
+	width: 100%;
+	height: 100%;
+	display: none ;
+	/*position: relative;*/
+}
+.slide-box .com-box{
+	position: relative;
+	height: 156px;
+	width: 266px;
+	float: left;
+	margin-left: 44px;
+	border: #463f3f dashed 2px;
+	border-radius:20px 5px;
+	cursor: pointer;
+	overflow: hidden;
+	-webkit-transition: border-color .4s ease-in .2s;
+	-moz-transition: border-color .4s ease-in .2s;
+	-o-transition: border-color .4s ease-in .2s;
+	transition: border-color .4s ease-in .2s;
+}
+.slide-box .com-box:hover{
+	border-color: #6a6868;
+}
+.slide-box .com-box:first-child{
+	margin-left: 0px;
+}
+.com-box .com-date{
+	height: 30px;/*45px*/
+	width: 260px;/*266px*/
+	/*margin: 3px;*/
+	padding-top: 15px;
+	font-family: "黑体";
+	font-size: 1.4em;
+	text-indent: 10px;
+}
+
+.com-box .com-date span{
+	margin-right: 10px;
+	float: right;
+}
+.com-box .com-name{
+	height: 60px;
+	width: 234px;
+	border-top: #463f3f dashed 2px;
+	border-bottom: #463f3f dashed 2px;
+	font-family: "黑体";
+	padding: 10px 15px; 
+	font-size: 1.2em;
+	text-align: center;
+	-webkit-transition: border-color .4s ease-in .2s;
+	-moz-transition: border-color .4s ease-in .2s;
+	-o-transition: border-color .4s ease-in .2s;
+	transition: border-color .4s ease-in .2s;
+}
+.com-box .com-name:hover{
+	border-color: #6a6868;
+}
+.com-box .com-place{
+	height: 30px;/*45px*/
+	width: 260px;/*266px*/
+	/*margin: 3px;*/
+	padding-top: 5px;
+	font-family: "黑体";
+	font-size: 1.1em;
+	text-indent: 10px;
+}
+/*所有赛事*/
+.com-all{
+	width: 960px;
+	height: auto;
+	min-height: 150px;
+	margin: auto;
+	text-align: center;
+	background: url(../img/zeri/right-corner.png) no-repeat 930px 50px;
+}
+.com-all .getAll{
+	margin-top: 50px;
+	width: 100%;
+	height: 50px;
+	text-align: right;
+	background: #696a6c url(../img/zeri/left-corner.png) left bottom no-repeat;
+}
+/*按钮*/
+.getAll .btn{
+	font-weight: 600;
+	font-size: 1.1em; 
+	text-transform: uppercase; color: #fff; 
+	background: #14B1DE; 
+	display: inline-block; 
+	padding: 0 20px; 
+	line-height: 2.0em;
+	text-shadow: 0 2px 2px rgba(0,0,0,0.6); 
+	margin: 10px 20px 10px 0;	
+	font-size: 1.1em; 
+	
+		
+	/* -- RADIUS -- */
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	-o-border-radius: 18px;
+	border-radius: 18px;
+	
+	/* -- SHADOW -- */
+	-webkit-box-shadow: inset 1px 1px 0 rgba(255,255,255, .6), 1px 1px 0 rgba(0,0,0,.8), 0 0 20px 5px rgba(255,255,255,0);
+	-moz-box-shadow: inset 1px 1px 0 rgba(255,255,255, .6), 1px 1px 0 rgba(0,0,0,.8), 0 0 20px 5px rgba(255,255,255,0);
+	-o-box-shadow: inset 1px 1px 0 rgba(255,255,255, .6), 1px 1px 0 rgba(0,0,0,.8), 0 0 20px 5px rgba(255,255,255,0);
+	
+	/* -- GRADIENT -- */
+	
+	background-image: linear-gradient(bottom, rgb(16,167,213) 100%, rgb(13,121,164) 0%);
+	background-image: -o-linear-gradient(bottom, rgb(16,167,213) 100%, rgb(13,121,164) 0%);
+	background-image: -moz-linear-gradient(bottom, rgb(16,167,213) 100%, rgb(13,121,164) 0%);
+	background-image: -webkit-linear-gradient(bottom, rgb(16,167,213) 100%, rgb(13,121,164) 0%);
+	background-image: -ms-linear-gradient(bottom, rgb(16,167,213) 100%, rgb(13,121,164) 0%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(1, rgb(16,167,213)),
+		color-stop(0, rgb(13,121,164))
+	);
+	
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.getAll .btn:hover{
+	text-shadow: 0 0px 2px rgba(0,0,0,0.6); 
+}
+.getAll .btn:active{
+	background: rgba(0,0,0,.5); 
+	color: #6CDFFF;
+	padding: 0 25px;
+	-webkit-box-shadow: inset 1px 1px 0 rgba(255,255,255, .2), 1px 1px 0 rgba(255,255,255,.3);
+	-moz-box-shadow: inset 1px 1px 0 rgba(255,255,255, .2), 1px 1px 0 rgba(255,255,255,.3);
+	-o-box-shadow: inset 1px 1px 0 rgba(255,255,255, .2), 1px 1px 0 rgba(255,255,255,.3);
+	box-shadow: inset 1px 1px 0 rgba(255,255,255, .2), 1px 1px 0 rgba(255,255,255,.3);
+}
+.getAll .btn.active{
+	background: rgba(0,0,0,.5); 
+	color: #6CDFFF;
+	padding: 0 25px;
+	-webkit-box-shadow: inset 1px 1px 0 rgba(255,255,255, .2), 1px 1px 0 rgba(255,255,255,.3);
+	-moz-box-shadow: inset 1px 1px 0 rgba(255,255,255, .2), 1px 1px 0 rgba(255,255,255,.3);
+	-o-box-shadow: inset 1px 1px 0 rgba(255,255,255, .2), 1px 1px 0 rgba(255,255,255,.3);
+	box-shadow: inset 1px 1px 0 rgba(255,255,255, .2), 1px 1px 0 rgba(255,255,255,.3);
+}
+.com-all .com-table{
+	width: 900px;
+	height: auto;
+	min-height: 100px;
+	margin: auto;
+	text-align: center;
+	position: relative;
+}
+
+
+/*#com-table{
+	width: 100%;
+	border-collapse:collapse;
+	text-align: center;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}*/
+.loading{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin:-50px 0 0 -50px;
+	/*background: red;*/
+}	
+.loadingcircle {
+	background-color: rgba(0,0,0,0);
+	border:5px solid rgba(0,183,229,0.9);
+	opacity:.9;
+	border-right:5px solid rgba(0,0,0,0);
+	border-left:5px solid rgba(0,0,0,0);
+	border-radius:50px;
+	box-shadow: 0 0 35px #2187e7;
+	width:50px;
+	height:50px;
+	margin:0 auto;
+	-moz-animation:spinPulse 1s infinite ease-in-out;
+	-webkit-animation:spinPulse 1s infinite linear;
+	-o-animation:spinPulse 1s infinite ease-in-out;
+	animation:spinPulse 1s infinite linear;
+}
+.loadingcircle1 {
+	background-color: rgba(0,0,0,0);
+	border:5px solid rgba(0,183,229,0.9);
+	opacity:.9;
+	border-left:5px solid rgba(0,0,0,0);
+	border-right:5px solid rgba(0,0,0,0);
+	border-radius:50px;
+	box-shadow: 0 0 15px #2187e7; 
+	width:30px;
+	height:30px;
+	margin:0 auto;
+	position:relative;
+	top:-50px;
+	-moz-animation:spinoffPulse 1s infinite linear;
+	-webkit-animation:spinoffPulse 1s infinite linear;
+	-o-animation:spinoffPulse 1s infinite linear;
+	animation:spinoffPulse 1s infinite linear;
+}
+@-moz-keyframes spinPulse {
+	0% { -moz-transform:rotate(160deg); opacity:0; box-shadow:0 0 1px #2187e7;}
+	50% { -moz-transform:rotate(145deg); opacity:1; }
+	100% { -moz-transform:rotate(-320deg); opacity:0; }
+}
+@-moz-keyframes spinoffPulse {
+	0% { -moz-transform:rotate(0deg); }
+	100% { -moz-transform:rotate(360deg);  }
+}
+@-webkit-keyframes spinPulse {
+	0% { -webkit-transform:rotate(160deg); opacity:0; box-shadow:0 0 1px #2187e7; }
+	50% { -webkit-transform:rotate(145deg); opacity:1;}
+	100% { -webkit-transform:rotate(-320deg); opacity:0; }
+}
+@-webkit-keyframes spinoffPulse {
+	0% { -webkit-transform:rotate(0deg); }
+	100% { -webkit-transform:rotate(360deg); }
+}
+/*加载动画结束*/
+#com-table table, td, th{
+  	border:2px solid #463f3f;
+  }
+#com-table td,#com-table th{
+	padding: 3px 7px 2px 7px;
+}
+/*页脚*/
+#footer{
+	width: 100%;
+	height: 100px;
+	background:url(../img/zeri/bg-r.jpg) repeat
+}
+#footer .partingLine{
+	width: 100%;
+	height: 2px;
+	background: url(../img/zeri/underEarthRep.gif) repeat-x;
+}
+#footer .copyRight{
+	padding-top: 70px;
+	width: 100%;
+	height: 30px;
+	background: url(../img/zeri/d-u.png) repeat-x; 
+	text-align: center;;
+}
+#footer .copyRight a{
+	color: #AAA;
+}
+#footer .copyRight a:hover{
+	color: #78B0EC;
+}
+#wiki{
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	height: 115px;
+	width: 115px;
+	background: url(../img/wiki.png) no-repeat;
+	cursor: pointer;
+}

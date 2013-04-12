@@ -1,0 +1,255 @@
+<!DOCTYPE HTML>
+<!--[if IE 6]><html class="ie6 lte9 lte7 no-css3" lang="zh-cn"><![endif]-->
+<!--[if IE 8]><html class="ie8 lte9 no-css3" lang="zh-cn"><![endif]-->
+<!--[if IE 9]><html class="ie9 lte9 no-css3" lang="zh-cn"><![endif]-->
+<!--[if IE 7]><html class="ie7 lte9 lte7 no-css3" lang="zh-cn"><![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8) | !(IE 9)  ]><!--><html lang="zh-cn"><!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<!-- 为ie6添加处理png的js文件-->
+<!--[if IE 6]>
+      <script type="text/javascript" src="script/DD_belatedPNG_0.0.8a-min.js"></script>
+      <script type="text/javascript">
+          DD_belatedPNG.fix(".dd-pngfix"); //给所有需要处理的png图片加上dd-pngifx这个class，就可以处理了
+      </script>
+<![endif]-->
+<!-- // static meta // -->
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="shortcut icon" href="">
+	<title>news</title>
+	<link rel="stylesheet" type="text/css" href="style/reset.css">
+	<link rel="stylesheet" type="text/css" href="style/nav.css">
+	<link rel="stylesheet" type="text/css" href="style/about.css">
+	<!-- 让IE支持HTML5标签 -->
+	<!--[if lt IE 9]>
+		<script src="script/html5shiv.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="script/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="script/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="script/jquery.scrollTo-min.js"></script>
+	<!--<script type="text/javascript" src="script/TweenMax.min.js"></script>-->
+	<script type="text/javascript" src="script/jquery.scrollorama.js"></script>
+	<script type="text/javascript" src="script/jquery.cycle.all.js"></script>
+	
+
+</head>
+<body>
+    <div id="fixedHead">
+		<div id="header">
+			<a href="index.html" class="logo" title="大连理工大学软件学院创新实践中心" style='top: 0px'>
+				<img src="img/logo.png" alt="创新实践中心">
+					<!-- <span>创新实践中心</span> -->		  		
+			</a>
+			<div id="nav">
+			<ul>
+ 		   		<li class="about">
+ 		   			<a href="about.html">
+ 		   				<span>
+ 		   					中心介绍
+ 		   					<strong>
+ 		   					about CIPPUS
+ 		   					</strong>
+ 		   				</span>
+ 		   			</a>
+ 		   		</li>
+ 		   		<li class="news">
+ 		   			<a href="news.html">
+ 		   				<span>新闻<strong>news</strong></span>
+ 	  	 			</a>
+   		 		</li>
+ 		   		<li class="works">
+ 		   			<a href="works.html">
+ 		   				<span>成果展示<strong>achievement</strong>
+ 		   				</span>
+ 	  	 			</a>
+   		 		</li>
+ 		   		<li class="models">
+ 		   			<a href="models.html">
+ 		   				<span>榜样<strong>model students</strong></span>
+ 	  	 			</a>
+   		 		</li>
+ 		   		<li class="groups">
+ 		   			<a href="groups.html">
+ 		   				<span>中心实践组<strong>groups</strong>
+ 	  	 				</span>
+   		 			</a>
+ 				 </li>
+ 		   		<li class="teams">
+ 		   			<a href="teams.html">
+ 		   				<span>团队介绍<strong>teams</strong>
+ 		   				</span>
+ 		   			</a>
+ 	  	 		</li>
+ 		  				
+ 		  	</ul>
+			</div>
+			<!-- end nav -->
+		</div>
+		<!-- end header -->
+	
+	</div>
+	<!-- end  fixedhead-->
+	<!-- 用来实现导航栏下的 黑色渐变 -->
+	<div id="navBlack"></div>
+	<div id="navBlack2"></div>
+	<div id="container" class="clearfix">
+		<div id="about" class="clearfix">
+			<div class="scrollBlock" id="intro">
+				<div class="about clearfix">
+					<h2>ABOUT</h2>
+					<span class="line"></span>
+					<spna class="dot"></spna>
+				</div>
+				<div class="introduce">
+					<div class="descript">
+						<h1>创新实践中心</h1>
+						<P>
+							软件学院创新实践中心隶属于大连理工大学、软件学院实训基地。中心成立于2003年4月，在学院领导的大力支持下，通过老师和同学们的建设，目前已经建设成为软件学院中有一定规模、较高声誉并有一定影响力的重要部门。
+						</P>
+					</div>
+					<div class="pop"><img src="img/about/pop.png"/></div>
+				</div>
+			</div>
+			<div class="scrollBlock clearfix" id="photo">
+				<div class="albumborder">
+					<div class="insetshadow  cycle-slideshow" id="circle">
+						<img src="img-test/q.jpg" data-cycle-fx=tileSlide data-cycle-tile-vertical=false  alt="">
+						<img data-cycle-fx=tileBlind data-cycle-tile-count=12 src="img-test/q.jpg" alt="">
+						<img data-cycle-fx=tileBlind data-cycle-tile-vertical=false src="img-test/q.jpg" alt="">
+						<img  data-cycle-fx=tileBlind data-cycle-tile-count=12 src="img-test/q.jpg" alt="">
+						<!-- empty element for pager links -->
+    					
+					</div>
+					<div class="cycle-pager"></div>
+				</div>
+			</div>
+			<div class="scrollBlock" id="principle">
+				<div class="princ">
+					<h2>中心原则</h2>
+					<p>时间上要留有余地</p>
+					<p>空间上要有场所</p>
+					<p>机制上充分自由</p>
+				</div>
+				<div class="slogan">
+					<h2>中心口号</h2>
+					<p class="eglish">
+						<span>Professional</span>
+						<span>United</span>
+						<span>Strive</span>
+					</p>
+					<p class="chinese">
+						<span>专业</span>
+						<span>合作</span>
+						<span>奋斗</span>
+					</p>
+				</div>
+			</div>
+			<div class="scrollBlock" id="develope">
+				<div class="develope">
+					<h2>中心发展</h2>
+					<p>
+						软件学院创新实践中心自2003年成立以来，在校创新院、软件学院领导的大力支持下，已经从一个10几人的小团体发展成至今已有成员350余名的具有创新精神和高凝聚力的研发团队。在这几年的发展中得到了学院以及学校各级领导老师的大力支持和关心指导，成立至今取得了非常可喜的成绩。创新实践中心承诺为优秀的本科学生提供充足的自主学习机会、良好的自主学习条件、丰富的研究资源和广泛的交流机会，营造有利于激发创新激情、发扬团结协作精神、促进学科融合、平等竞争的健康活泼的学术氛围，充分发挥学生个性和挖掘学生创新潜能，培养一大批具有实践能力和创新能力的拔尖人才。
+					</p>
+				</div>
+			</div>
+			<div class="scrollBlock" id="achive">
+				<div class="achive">
+					<h2>中心成绩</h2>
+					<p class="sum clearfix"><span class="type">国际奖项</span><span class="time" id="guoji">0</span><span class="renci">人次</span></p>
+					<p class="sum clearfix"><span class="type">国家级奖项</span><span class="time" id="guonei">0</span><span class="renci">人次</span></p>
+					<p class="detail">
+						获ACM/ICPC国际大学生程序设计竞赛亚洲区预选赛2枚银奖和2枚铜奖，国际数模一等奖21人次，国际数模二等奖24人次等。在创新实践中心组织开展的竞赛中，ACM/ICPC国际大学生程序设计竞赛、国际数学建模比赛、全国“高教社”杯数学建模比赛、瑞萨超级MCU模型车大赛、大连-日本青森县IT产业商业设计大赛、乐天杯电子商务大赛等竞赛中，成绩尤为突出。
+					</p>
+				</div>
+			</div>
+			<div class="scrollBlock clearfix" id="activity">
+				<div class="activity clearfix">
+					<h2>中心特色活动<span></span></h2>
+					<p>
+						创新实践中心于每年11月至12月份举办软件学院科技文化节，并组织同学们进行科研立项工作。科技文化节，是一个大连理工软件学院最具规模、最具创新的比赛。科技文化节包括比赛：程序设计、软件设计、网页设计、短片设计、机器人足球、网络知识竞赛、IT推广竞赛和IT商务日语竞赛。同时，科技文化节期间，还会组织精彩的知识讲座，如：微软创新之旅、黑客技术、嵌入式讲座、硬件知识讲座等。该科技文化节不仅活跃学院的创新氛围，加强同学们的科技实践动手能力，而且培养的同学们的创新意识。
+					</p>
+				</div>
+			</div>
+			<div class="scrollBlock" id="org">
+				<div class="org">
+					<h2>
+						<span>中</span>
+						<span>心</span>
+						<span>组</span>
+						<span>织</span>
+						<span>结</span>
+						<span>构</span>
+					</h2>
+					<div class="struct clearfix">
+						<div class="zhuren zhuren1"><span class="span1"></span>主  任<span class="span2"></span></div>
+						<div class="zhuren zhuren2"><span class="span1"></span>副主任<span class="span2"></span></div>
+						<div class="groups clearfix">
+							<div class="group1 clearfix">
+								<h3>
+									<span></span>
+									技术指导
+									<span class="right"></span>
+								</h3>
+								<ul class="clearfix">
+									<li>A C M组</li>
+									<li>数模组</li>
+									<li>嵌入式组</li>
+									<li>瑞萨模型车组</li>
+									<li>数字媒体组</li>
+								</ul>
+							</div>
+							<div class="group2 clearfix">
+								<h3>
+									<span></span>
+									技术指导
+									<span class="right"></span>
+								</h3>
+								<ul class="clearfix">
+									<li>网络组</li>
+									<li><span>web</span> 组</li>
+									<li>软件组</li>
+									<li>平面组</li>
+								</ul>
+							</div>
+							<div class="group3 clearfix">
+								<h3>
+									<span></span>
+									技术指导
+									<span class="right"></span>
+								</h3>
+								<ul class="clearfix">
+									<li>腾讯俱乐部</li>
+									<li>创新技术联盟</li>
+									<li>金融组</li>
+									<li>创业组</li>
+									<li>日语组</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="scrollBlock" id="summarize">
+				<div class="summarize clearfix">
+					<h2>中心总结</h2>
+					<p>
+						软件学院创新实践中心是培养科技创新人才，专业人才的核心部门。在今后的发展中，中心将在原有的基础上进行新的突破和尝试。创新实践中心正在成长，将给同学们创造良好的学习和科技创新氛围。创新实践中心已经成为大家一个技术交流的平台，将继续以广大学生的创新能力的培养为主要目标，开展相关工作。
+					</p>
+				</div>
+			</div>
+			<div class="scrollBlock clearfix" id="goback">
+				<div class="goback">
+					
+				</div>
+			</div>
+		</div>
+  	</div>
+ <!-- end container -->
+  
+		
+ <div id="footer"></div>
+<!-- end footer-->
+<script type="text/javascript" src="script/about.js"></script>
+</body>
+</html>

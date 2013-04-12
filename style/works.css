@@ -1,0 +1,318 @@
+@charset 'utf-8';
+/*@一叶 */
+/*说明本样式灵感来自大神 http://www.yiyifly.com/设计的点点模板 */
+.sprite{
+	background: url(../img/works/sprite.png) 0 -9999em no-repeat;
+}
+.icon{
+	background: url(../img/works/icon.png) 0 -9999em no-repeat;
+}
+#works{
+	width: 960px;
+	margin: 0 auto;
+	font-family:verdana,'微软雅黑', sans-serif;
+	position: relative;
+}
+#head{
+	width: 100%;
+	margin: 150px auto 0;
+	word-break:break-all;
+	word-wrap:break-word;
+	position: relative;
+}
+
+#worksICO{
+	float: left;
+	width: 100px;
+	height: 190px;
+	margin-left: 380px;
+	background-position: 30px 60px;
+}
+#worksICO .circle{
+	width: 64px;
+	height: 64px;
+	border: 5px solid white;
+	border-radius: 37px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.3);
+	position: relative;
+}
+
+#worksICO img{
+	/*border-radius: 32px;*/
+	margin:11px 0 0 0;
+}
+#head .worksTitle{
+	float: right;
+	width: 480px;
+	text-align: left;
+}
+.worksTitle h1{
+	color: white;
+	font:24px/200% "微软雅黑",sans-serif;
+}
+.worksTitle .description{
+	color: white;
+	max-height: 27px;
+	overflow: hidden;
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 10px;
+}
+#head .search{
+	float: left;
+	overflow: hidden;
+	margin-left: 5px;
+	height: 28px;
+	border-radius: 3px;
+	padding: 0 10px;
+	background: rgba(0,0,0,.3);
+	filter: Alpha(opacity=30);
+}
+#head .search .ipt-txt {
+	position: relative;
+	vertical-align: middle;
+	width: 1px;
+	height: 22px;
+	line-height: 22px;
+	text-indent: 1px;
+	background: transparent;
+	border: 0;
+	font-size: 15px;
+	font-family: "微软雅黑",sans-serif;;
+	outline: none;
+	color: #EEE;
+}
+#head .search .sb {
+	position: relative;
+	vertical-align: middle;
+	width: 22px;
+	height: 22px;
+	border: 0;
+	background-position: -11px -197px;
+	cursor: pointer;
+}
+/*end head*/
+/*foot*/
+#foot{
+	width: 100%;
+	height: 48px;
+	position: relative;
+
+}
+
+.load-more{
+	display: block;
+	width: 48px;
+	height: 48px;
+	margin: 18px auto 0;
+	background-position: 1px -79px;
+	cursor: pointer;
+	border-radius: 24px;
+	box-shadow: 0 0 5px rgba(0,0,0,.5) inset;
+}
+/*.load-more:hover{
+	background-color: #a6a6a6;
+	position: relative;
+}*/
+.loading{
+	display: block;
+	width: 46px;
+	height: 46px;
+	margin: 18px auto 0;
+	border: 1px solid white;
+	border-radius: 23px;
+	/*box-shadow: 0 0 5px rgba(0,0,0,.5);*/
+	background: white url(../img/works/loading.gif) no-repeat -1px 0px;
+}
+.nopages{
+	display: block;
+	text-align: center;
+	font:32px/40px Monotype Corsiva,'Felipa', Segoe Print, sans-serif;
+	background: none;
+	color: #fff;
+	margin-top: 20px;
+	text-shadow:0 0 5px rgba(0,0,0,0.5);
+}
+/*end foot*/
+/*main*/
+#main{
+	margin-top: 150px;
+	color: white;
+}
+.fruit{
+	height: 450px;
+	overflow: hidden;
+	margin: -125px 0;
+	padding: 100px 0;
+	word-break:break-all;
+	word-wrap:break-word;
+}
+.fruit-left{
+	background: url(../img/works/tracklist.png) 0 0 no-repeat;
+}
+.fruit-right{
+	background: url(../img/works/tracklist.png) right -650px no-repeat;
+}
+.fruit-date{
+	width: 230px;
+	height: 70px;
+	margin: -100px auto 0;
+	/*white-space: nowrap;*/
+}
+.fruit-date .number{
+	float: left;
+	width: 44px;
+	margin: 4px 5px 0 0;
+	background-position: 0 0 ;
+	text-align: center;
+	font: 16px/65px verdana,Arial,"宋体",sans-serif;
+}
+.fruit-date .week{
+	text-align: left;
+	display: block;
+	font: 28px/40px Monotype Corsiva,'Felipa', Segoe Print, sans-serif;
+}
+.fruit-date .date{
+	display: block;
+	text-indent: 3px;
+	font: 14px/20px verdana,Arial,"宋体",sans-serif;
+}
+.fruit-content {
+	width: 720px;
+	margin: 70px auto 0;
+}
+.fruit-main-bg{
+	float: left;
+	width: 574px;
+	height: 273px;
+	overflow: hidden;
+	background-position: 0 -320px;
+	margin: 18px -170px 0 0;
+}
+.fruit-right .fruit-main-bg {
+	float: right;
+	margin: 18px 0 0 -170px;
+}
+
+.fruit-what{
+	height: 253px;
+	overflow: hidden;
+	margin: 10px 10px;
+	cursor: default;
+	background-position: 0 -620px;
+}
+
+
+.fruit-type{
+	font-size: 16px;
+	line-height: 260px;
+	float: left;
+	width: 320px;
+	height: 200px;
+	overflow: hidden;
+	margin: 20px 60px 0;
+}
+.fruit-right .fruit-type {
+	float: right;
+}
+.fruit-type h2{
+
+	height: 34px;
+	margin: 10px 0 19px 0;
+	font: 26px/34px Verdana, Arial, "微软雅黑", sans-serif;
+	color: black;
+}
+.fruit-detail{
+	margin: 50px 0 19px 0;
+	color: black;
+	font: 20px/29px Verdana, Arial, "微软雅黑", sans-serif;
+}
+.fruit-meta{
+	position: relative;
+	float: right;
+	width: 310px;
+	height: 310px;
+	background-position: -130px 0;
+	text-align: center;
+}
+.fruit-right .fruit-meta {
+	float: left;
+}
+.fruit-owner{
+	width: 120px;
+	height: 60px;
+	font: 16px/18px '微软雅黑', Arial, "宋体", sans-serif;
+	margin: 40px auto 8px;
+	color: black;
+	font-weight: 600;
+	overflow:hidden;
+}
+.fruit-owner span{
+	float: left;
+	display: inline-block;
+	width: 55px;
+	text-align: center;
+	margin-right: 5px;
+	line-height: 20px
+}
+.fruit-photo{
+	width: 230px;
+	height: 110px;
+	overflow: hidden;
+	margin-left: 35px;
+	text-align: center;
+	border: white 3px solid;
+	/*box-shadow: 1px 1px 3px rgba(0,0,0,.3) inset,-1px -1px 3px rgba(0,0,0,.3) inset;*/
+}
+.fruit-photo:hover{
+	/*width: 300px;*/
+	box-shadow: 1px 1px 3px rgba(0,0,0,.3),-1px -1px 3px rgba(0,0,0,.3);
+}
+
+.fruit-photo img{
+	max-width: 230px;
+	cursor:pointer;
+}
+.fruit-introductor{
+	width: 120px;
+	margin: 15px auto 0;
+	font: 16px/18px '微软雅黑', Arial, "宋体", sans-serif;
+	color: black;
+	text-align: left;
+}
+.fruit-introductor span{
+	float: right;
+}
+/*图片弹出的遮罩*/
+#overlay{
+	display: none;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	filter: alpha(opacity=60); /* IE的透明度 */
+    opacity: 0.6;  /* 透明度 */
+    background: #000;
+    z-index: 1000;
+}
+
+#olContent{
+	display: none;
+	position: fixed;
+	background: white;
+	z-index: 10001;
+	overflow: hidden;
+    text-align: center;
+    
+}
+#olClose{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	right:0px;
+	cursor: pointer;
+	background:black url(../img/works/close.png) 50% 50% no-repeat;
+}
+/*end main*/

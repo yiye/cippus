@@ -1,0 +1,281 @@
+@charset 'utf-8';
+/*author yiye@sunlightaustralia.com*/
+#news{
+	/*height: 10000px;*/
+	width: 960px;
+	background: rgba(34, 25, 25, 0.2);
+	margin: 100px auto;
+	/*opacity: 0.2;*/
+}
+#news .box{
+	position: relative;
+	float: left;
+	width: 204px;
+	height: auto;
+	padding: 10px;
+	margin: 8px;
+	font-size: 11px;
+  	cursor: pointer;
+	background-color: rgb(240, 240, 240);
+	color: #585555;
+	box-shadow: 0 0 0 rgba(34, 25, 25, 0.2);
+	-moz-box-shadow: 0 0 0 rgba(34,25,25,0.2);
+	-webkit-box-shadow: 0 0 0 rgba(34, 25, 25, 0.2);
+	-o-box-shadow:0 0 0 rgba(34, 25, 25, 0.2);
+	/*transition: 0s;
+	-webkit-transition: 0s;
+	-moz-transition: 0s;
+	-o-transition: 0s;
+*/
+}
+#news .box:hover{
+	background-color:white;
+}
+.box h2{
+	color: #585555;
+	text-align: left;
+	line-height: 1.4em;
+	font-family: '黑体';
+}
+.box .summary{
+	margin: 10px;
+
+}
+.box .summary .img{
+	margin-bottom: 10px;
+	text-align: center;
+	width: 190px;
+	/*height: 109px;*/
+	overflow:hidden;
+}
+.box .summary .img img{
+	width: 190px;
+	height:109px;
+
+}
+
+.box .summary .word{
+	text-align: left;
+	text-indent: 2em;
+}
+.box .authorAndTime{
+	margin-top: 10px;
+	border-top-width:1px;
+	border-top-style:dashed;
+	padding-top: 5px;
+	text-align: right;
+	/*background: #bfbcbc;*/
+}
+.box .authorAndTime span{
+	margin-left: 20px;
+}
+/*加载动画*/
+#body>.loading{
+	position: fixed;
+	width: 100%;
+	height: 30px;
+	bottom:0px;
+	background: white;
+	opacity: .8;
+	/*bottom: 100px*/
+}
+/*瀑布流动画*/
+/*.masonry,
+.masonry .masonry-brick {
+  -webkit-transition-duration: 0.7s;
+     -moz-transition-duration: 0.7s;
+      -ms-transition-duration: 0.7s;
+       -o-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+.masonry {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.masonry .masonry-brick {
+  -webkit-transition-property: left, right, top;
+     -moz-transition-property: left, right, top;
+      -ms-transition-property: left, right, top;
+       -o-transition-property: left, right, top;
+          transition-property: left, right, top;
+}*/
+
+#returnTop{
+	opacity: 0;
+	bottom: -200px;
+	position: fixed;
+	z-index: 99;
+	right: 15px;
+	bottom: -200px;
+	width: 22px;
+	height: 32px;
+	text-indent: -999px;
+	overflow: hidden;
+	background-image: url(../img/icon_process5.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	transition: bottom .9s;
+	-webkit-transition: bottom .9s;
+	-moz-transition: bottom .9s;
+	-o-transition: bottom .9s;
+}
+#returnTop:hover{
+	background-position: 50% -32px; 
+}
+
+
+/*新闻弹出的遮罩*/
+#overlay{
+	display: none;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	filter: alpha(opacity=60); /* IE的透明度 */
+    opacity: 0.6;  /* 透明度 */
+    background: #000;
+    z-index: 1000;
+}
+/*#overlay */
+#olContent{
+	display: none;
+	position: fixed;
+	top: 10%;
+	left: 10%;
+	width: 80%;
+	height: 80%;
+	background: white;
+	z-index: 10001;
+	overflow: hidden;
+	filter: alpha(opacity=100); /* IE的透明度 */
+    opacity: 1;  /* 透明度 */
+    text-align: center;
+    border-radius:5px;
+
+}
+#olContent #olClose{
+	width: 40px;
+	height: 40px;
+	background: #E61717;
+	position: absolute;
+	top: 0;
+	right:5px;
+	font-size: 3em;
+	font-family: "黑体";
+	color: white;
+	cursor: pointer;
+}
+#olContent #olClose:hover{
+	background:rgb(248, 3, 3) ;
+	-webkite-box-shadow:0px 0px 3px rgba(248, 3, 3, .4);;
+	-moz-box-shadow:0px 0px 3px rgba(248, 3, 3, .4);;
+	-o-box-shadow:0px 0px 3px rgba(248, 3, 3, .4);;
+	box-shadow:0px 0px 3px rgba(248, 3, 3, .4);;
+}
+#newsDetail{
+	width: 100%;
+	height: 90%;
+	margin:40px auto 40px auto ;
+	/*background: gray;*/
+	color: black;
+	position: relative;
+	overflow: hidden;
+}
+#newsDetail #newsTitle{
+	color: black;
+	font-family: "楷体";
+	margin-bottom: 5px;
+	font-size: 2em;
+
+}
+#newsDetail #newsTime{
+	width: 100%;
+	height: 20px;
+	text-align: right;
+	position: relative;
+	background: url(../img/gradual/bl.png) no-repeat 50% 18px ;
+}
+#newsDetail #newsTime span{
+	margin: 0 10px 0 20px
+}
+#newsDetail #newsText{
+	overflow: auto;
+	height:85%;
+	width: 95%;
+	padding-left:5%;
+	text-align: left;
+
+}
+#newsDetail #newsText img{
+	max-width: 850px;
+}
+/*加载动画*/
+#olContent .loading{
+	width: 100px;
+	height: 100px;
+	/*position: absolute;*/
+	/*top: 48%;*/
+	/*left: 48%;*/
+	/*background: red;*/
+	margin:30% auto;
+	/*display: none;*/
+}
+
+.loadingcircle {
+	background-color: rgba(0,0,0,0);
+	border:5px solid rgba(0,183,229,0.9);
+	opacity:.9;
+	border-right:5px solid rgba(0,0,0,0);
+	border-left:5px solid rgba(0,0,0,0);
+	border-radius:50px;
+	box-shadow: 0 0 35px #2187e7;
+	width:50px;
+	height:50px;
+	margin:0 auto;
+	-moz-animation:spinPulse 1s infinite ease-in-out;
+	-webkit-animation:spinPulse 1s infinite linear;
+	-o-animation:spinPulse 1s infinite ease-in-out;
+	animation:spinPulse 1s infinite linear;
+}
+.loadingcircle1 {
+	background-color: rgba(0,0,0,0);
+	border:5px solid rgba(0,183,229,0.9);
+	opacity:.9;
+	border-left:5px solid rgba(0,0,0,0);
+	border-right:5px solid rgba(0,0,0,0);
+	border-radius:50px;
+	box-shadow: 0 0 15px #2187e7; 
+	width:30px;
+	height:30px;
+	margin:0 auto;
+	position:relative;
+	top:-50px;
+	-moz-animation:spinoffPulse 1s infinite linear;
+	-webkit-animation:spinoffPulse 1s infinite linear;
+	-o-animation:spinoffPulse 1s infinite linear;
+	animation:spinoffPulse 1s infinite linear;
+}
+@-moz-keyframes spinPulse {
+	0% { -moz-transform:rotate(160deg); opacity:0; box-shadow:0 0 1px #2187e7;}
+	50% { -moz-transform:rotate(145deg); opacity:1; }
+	100% { -moz-transform:rotate(-320deg); opacity:0; }
+}
+@-moz-keyframes spinoffPulse {
+	0% { -moz-transform:rotate(0deg); }
+	100% { -moz-transform:rotate(360deg);  }
+}
+@-webkit-keyframes spinPulse {
+	0% { -webkit-transform:rotate(160deg); opacity:0; box-shadow:0 0 1px #2187e7; }
+	50% { -webkit-transform:rotate(145deg); opacity:1;}
+	100% { -webkit-transform:rotate(-320deg); opacity:0; }
+}
+@-webkit-keyframes spinoffPulse {
+	0% { -webkit-transform:rotate(0deg); }
+	100% { -webkit-transform:rotate(360deg); }
+}

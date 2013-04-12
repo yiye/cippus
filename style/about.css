@@ -1,0 +1,517 @@
+@charset 'utf-8';
+/*author yiye */
+/*reset the container for animate */
+
+#container{
+	width: 100%;
+	margin: 75px auto auto auto;
+	background-attachment: fixed;
+	z-index: 0;
+	text-align: center;
+}
+
+#about{
+	width: 100%;
+	margin: 40px auto;
+	font-family:verdana,'微软雅黑', sans-serif;
+	position: relative;
+}
+
+/**/
+.scrollBlock {
+	position: relative;
+	margin: 0;
+	width: 100%;
+	height: 600px;
+}
+#intro{
+	/*position: relative;*/
+	left: 50%;
+	margin-left: -480px;
+	/*margin: 20px auto;*/
+	width: 960px;
+	height:  600px;
+}
+#intro .about{
+	/*float:left;*/
+	margin-left: 40px;
+	width: 185px;
+	height: 59px;
+}
+#intro .about h2{
+	font: 3em "微软雅黑",sans-serif white;
+	font-weight: 900;
+	letter-spacing: .3em;
+	text-align: center;
+	position:relative;
+	float: left;
+	text-shadow:1px 1px 3px white; 
+}
+#intro .about .line{
+	width: 150px;
+	height: 25px;
+	position: relative;
+	float: left;
+	background: url(../img/about/about_line.png) no-repeat center;
+}
+#intro .about .dot{
+	width: 25px;
+	height: 25px;
+	float:left;
+	position: relative;
+	margin-left: 10px;
+	background: url(../img/about/about_btn.png) no-repeat bottom center;
+}
+#intro .introduce{
+	width:auto;
+	height: 250px;
+	margin: 40px auto 0 40px;
+}
+#intro .introduce .descript{
+	width: 580px;
+	height: 220px;
+	text-align: left;
+	overflow: visible;
+	float: left;
+}
+#intro .introduce .descript h1{
+	font: 5em "微软雅黑",sans-serif white;
+	/*text-align: left;*/
+	letter-spacing: .1em;
+	height: 70px;
+	width: 580px;
+	text-shadow: -1px -1px 0 #fff,1px 1px 0 #333,1px 1px 0 #0C0796;
+}
+#intro .introduce .descript p{
+	font-size: 18px;
+	font-family: "宋体",sans-serif;
+	color: #D7DADD;
+	/*color: #144884;*/
+	width: 530px;
+	margin: 40px auto 0 20px; 
+	/*text-shadow: 0 1px 1px #fff;*/
+}
+#intro .introduce .pop{
+	width:200px;
+	height: 200px;
+	float:right;
+	/*margin-top: 3000px;*/
+}
+#photo{
+	overflow: hidden;
+}
+#photo .albumborder{
+	position: absolute; 
+	left: 50%;
+	/*left: 500px;*/
+	margin-right: -450px;
+	top: 0px;
+	width: 500px;
+	height: 447px;
+	text-align: center;
+	overflow: hidden;
+	background: url(../img/about/picture.png) no-repeat top center;
+}
+.cycle-pager{
+	text-align: center;
+	width: 100%;
+	z-index: 500;
+	position: absolute;
+	bottom: 55px;
+	overflow: hidden;
+}
+.cycle-pager a{
+	font-family: arial;
+	font-size: 50px;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	color: #DDD;
+	cursor: pointer;
+	text-indent: 1000em;
+	background: url(../img/about/dot.png) no-repeat;
+	background-position:  0 -20px;
+}
+.cycle-pager a.activeSlide{
+	background-position: 0 0px;
+}
+#photo .albumborder .insetshadow{
+	width: 475px;
+	height: 355px;
+	overflow: hidden;
+	margin: 10px 10px auto 10px;
+	box-shadow: 2px 2px 8px #4E5353 inset;
+}
+#photo img{
+	width: 475px;
+}
+#principle{
+	overflow: hidden;
+}
+#principle .princ{
+	margin-top: 200px;
+	width:210px;
+	height: 200px;
+	position: absolute;
+	left: 50%;
+	text-align: left;
+	margin-left: -450px; 
+}
+#principle .princ h2{
+	font: 2em "微软雅黑",sans-serif;
+	color: #21374c;
+	background: url(../img/about/kou.png) no-repeat;
+	height: 41px;
+	width: 100%;
+	padding-left: 2px;
+}
+#principle .princ p{
+	font: 1.5em "微软雅黑",sans-serif ;
+	color: white;
+	width: 100%;
+	height: auto;
+	margin-top: 20px;
+	letter-spacing: .1em;
+}
+#principle .princ p span{
+	display: inline-block;
+}
+#principle .slogan{
+	margin-top: 200px;
+	height: 200px;
+	width: 430px;
+	position: absolute;
+	right: 50%;
+	margin-right: -500px;
+	text-align: left;
+
+}
+#principle .slogan h2{
+	font: 2em "微软雅黑",sans-serif;
+	color: #21374c;
+	background: url(../img/about/kou.png) no-repeat;
+	padding-left: 2px;
+	height: 41px;
+	width: 100%;
+}
+#principle .slogan p{
+	font: 1.7em "微软雅黑",sans-serif;
+	color: white;
+	width: 100%;
+	height: 41px;
+	margin-top: 15px;
+}
+#principle .slogan p span{
+	display: inline-block;
+	float:left;
+	margin-left: 20px;
+	font: inherit;
+}
+#principle .slogan p span:first-child{
+	margin-left: 0px;
+}
+/*#principle .eglish{
+	text-shadow: -1px -1px 0 #fff,1px 1px 0 #333,1px 1px 0 #0C0796;
+}*/
+#develope .develope{
+	width: 720px;
+	height: 280px;
+	position: absolute;
+	left: 50%;
+	margin-left: -450px;
+}
+.develope h2{
+	font: 3em "微软雅黑",sans-serif;
+	color: #21374c;
+	text-align: left;
+	width: 100%;
+	height: 85px;
+	background: url(../img/about/fa.png) no-repeat;
+	padding: 2px 20px;
+}
+.develope p{
+	font-size: 1.3em;
+	color: white;
+	margin-top: 20px;
+	text-align: left;
+}
+.achive{
+	text-align: left;
+	width: 700px;
+	height: 370px;
+	right: 50%;
+	position: absolute;
+	margin-right:  -440px;
+	overflow: hidden;
+}
+.achive h2{
+	font: 3.7em "微软雅黑",sans-serif;
+	color: white;
+	width: 100%;
+	height: 85px;
+	letter-spacing: .1em;
+	margin-bottom: 20px;
+	background: url(../img/about/cheng_line.png) no-repeat bottom left;
+	/*text-shadow: -1px -1px 0 #fff,1px 1px 0 #333,1px 1px 0 #0C0796;*/
+}
+.achive .sum {
+	width: 100%;
+	height: 60px;
+}
+.achive .sum span{
+	display: inline-block;
+	text-align: center;
+	font: 2.7em "微软雅黑",sans-serif;
+	float: left;
+	position: relative;
+}
+.achive .sum .type{
+	width: 191px;
+	height: 100%;
+	float: left;
+	background: url(../img/about/cheng.png) no-repeat 0 5px;
+	font: 2.7em "微软雅黑",sans-serif;
+	color: #40566e;
+	/*padding-top:10px; */
+}
+.achive .sum .time{
+	width: 50px;
+	height: 50px;
+	border-radius: 28px;
+	border: 3px solid white;
+	background: rgba(255,255,255,0.6);
+    color: #142c41;
+    margin-left: 320px; 
+    /*font-size: 3em;*/
+    /*margin-right: 100px;*/
+}
+.achive .sum .renci{
+	width: 100px;
+	height: 100%;
+	/*float: right;*/
+	/*margin-right: -200px;*/
+}
+.achive .detail{
+	font-size: 1.3em ;
+	color: #EEE3E3;
+	width: 100%;
+	height: auto;
+	margin-top: 20px;
+}
+
+.activity{
+	width: 640px;
+	height: 300px;
+	position: relative;
+	left: 50%;
+	margin-left: -400px;
+}
+.activity h2{
+	text-align: left;
+	width: 100%;
+    height: 90px;
+    font: 3.3em "微软雅黑",sans-serif;
+    color: white;
+    position: relative;
+    background: url(../img/about/huo_line.png) no-repeat bottom left;
+}
+.activity h2 span{
+	width: 25px;
+	height: 25px;
+	background: url(../img/about/about_btn.png) no-repeat;
+	position: absolute;
+	bottom: -3px;
+	left: 225px;
+	z-index: 2;
+}
+
+.activity p{
+	width: 100%;
+	height: auto;
+	font-size: 1.3em ;
+	color: #EEE3E3;
+	margin-top: 10px;
+	text-align: left;
+}
+#org{
+	height: 700px;
+}
+.org{
+	width: 840px;
+	height: 100%;
+	margin: auto;
+}
+.org h2{
+	width: 100%;
+	height: 93px;
+	font: 3.7em "微软雅黑",sans-serif;
+	color: white;
+	text-align: left;
+	font-weight: 300;
+	padding: 15px 0px 0px 25px; 
+	/*letter-spacing: .3em;*/
+	background: url(../img/about/zu_kong.png) no-repeat;
+}
+.org .struct{
+	width: 100%;
+	height: 440px;
+	background: url(../img/about/zongjie.png) no-repeat;
+	background-position: center 80px;
+	position: relative;
+}
+
+.org .struct .zhuren{
+	width: 380px;
+	height: 38px;
+	background-color: rgba(255,255,255,.6);
+	text-align: center;
+	font: 2.3em "微软雅黑",sans-serif;
+	color: #142c41;
+	letter-spacing: 1.7em;
+	position: absolute;
+	margin: auto;
+	text-indent: 58px;
+	line-height: 38px;
+	/*margin-top: 40px;*/
+}
+.org .struct .zhuren1{
+	left: 50%;
+	margin-left: -190px;
+	top: 38px;
+
+}
+.org .struct .zhuren2{
+	left: 50%;
+	margin-left: -190px;
+	top: 122px;
+}
+.org .struct .zhuren span{
+	position: relative;
+	display: inline-block;
+	width: 20px;
+	margin: 0;
+	height: 100%;
+	background: url(../img/about/zu_dot_b.png) no-repeat center;
+}
+.org .struct .zhuren .span1{
+	margin-right: 10px;
+	float: left;
+}
+.org .struct .zhuren .span2{
+	float: right;
+}
+.org .struct .groups{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	position: relative;
+	margin-top: 240px;
+}
+.org .struct .groups>div{
+	float: left;
+	position: relative;
+}
+.org .struct .groups h3{
+	width: 100%;
+	height: 37px;
+	background: rgba(9, 40, 68, 0.81);
+	line-height: 37px;
+	font: 2em "微软雅黑",sans-serif;
+	font-weight: 300; 
+}
+.groups>div h3 span{
+	display: inline-block;
+	position: relative;
+	float: left;
+	width: 20px;
+	height: 100%;
+	background: url(../img/about/zu_dot.png) no-repeat center;
+}
+.groups .right{
+	float: right;
+}
+.org .struct .groups .group1{
+	width: 205px;
+	height: auto;
+	margin-left: 86px;
+}
+.org .struct .groups .group2{
+	width: 160px;
+	height: auto;
+	margin-left: 59px;
+}
+.org .struct .groups .group3{
+	width: 205px;
+	height: auto;
+	margin-left: 59px;
+}
+
+.groups>div ul{
+	width: 100%;
+	height: auto;
+	margin-top: 5px;
+}
+.groups>div ul li{
+	width: 35px;
+	height: 200px;
+	margin-right: 5px;
+	float: left;
+	font: 1.7em "微软雅黑",sans-serif;
+	color: white;
+	background:rgba(9, 40, 68, 0.81);
+	writing-mode:tb-rl; 
+	padding-top: 10px;
+	overflow: hidden;
+}
+/*.groups>div ul li:before{
+	content: "";
+	height: 20px;
+	width: 100%;
+	background: url(../img/about/zu_dot.png) no-repeat;*/
+/*}*/
+.groups .group2 ul li span{
+	display: inline-block;
+	font-size:.8em;
+	margin-bottom:30px; 
+}
+#summarize{
+	/*margin-top: 300px;*/
+	height: 300px;
+}
+.summarize{
+	width: 880px;
+	height: auto;
+	margin: auto;
+}
+.summarize h2{
+	width: 100%;
+	height: 53px;
+	font: 2.7em "微软雅黑",sans-serif;
+	color: white;
+	text-align: left;
+	text-indent: 50px;
+	background: url(../img/about/zong_btn.png) no-repeat left center;
+}
+.summarize p{
+	text-align: left;
+	width: 95%;
+	height:140px;
+	margin-top: 30px;
+	font-size: 1.4em ;
+	color: #CECECE;
+	padding: 20px;
+	overflow: hidden;
+	background: url(../img/about/zong_line.png) no-repeat center;
+}
+#goback{
+	width: 100%;
+	height: 200px;
+}
+#goback .goback{
+	float: right;
+	height: 71px;
+	width: 71px;
+	margin-right: 17%;
+	cursor: pointer;
+	background: url(../img/about/big_btn.png) no-repeat;
+}

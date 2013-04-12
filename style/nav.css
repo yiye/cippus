@@ -1,0 +1,179 @@
+@charset "utf-8";
+/*@author:yiye 2012年冬*/
+/*本样式主要用在子页面整体风格的布局控制*/
+
+body{
+	background: url(../img/bg-r.jpg) repeat 0px 75px;
+	background-attachment: fixed;
+	text-align: center;
+}
+#fixedHead{
+ 
+ position: fixed;
+ top: 0px;
+ width: 100%;
+ z-index: 100;
+ background: url(../img/bg-r-head.jpg) repeat-x;
+ z-index: 100;
+ /*left: 50%;*//**/
+}
+
+
+#header{
+	height: 75px;
+	position: relative;
+	max-height: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+.logo{
+	top:0px;
+	width: 260px;
+	left: 50%;
+	margin-left: -130px;
+	margin-top:-35px;
+	background: url(../img/logo_bg.png) no-repeat 50% 100%;	
+	padding: 0px 0 50px 0;
+	display: block;
+	position: absolute;
+	z-index: 999;
+	-webkit-transition: padding-top .1s ease-in-out;
+	-moz-transition: padding-top .1s ease-in-out;
+	transition: padding-top .1s ease-in-out;
+}
+.logo:hover{
+	padding-top: 40px
+}
+.logo img{
+	display: block;
+	margin: 0px auto;
+	max-width: 100%;
+}
+/*导航栏*/
+#nav{
+	width: 100%;
+	height: 105px;    /*main.css中为 190px*/  
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	display: block;
+	/*main.css中没有*/
+	background: url(../img/gradual/line.png) no-repeat  0px 74px;  
+	/**/
+}
+#nav ul{
+	width: 100%;
+	height: 100%;
+	position: relative;
+
+}
+#nav ul li{
+	width: 120px;
+	background: url(../img/nav-ribbon.png) no-repeat;
+	background-position: 50% -190px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	cursor: pointer;
+	-webkit-transition: background-position .3s ease-in-out;
+	-moz-transition: background-position .3s ease-in-out;
+	-o-transition: background-position .3s ease-in-out;
+	transition: background-position .3s ease-in-out;
+}
+#nav ul li:hover{
+	background-position: 50% -80px;/*main.css中为 0px*/
+}
+#nav ul li a{
+	line-height: 1.1em;
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	color: white;
+	font-size: 1.2em;
+	font-family: '黑体';
+	text-transform: uppercase;
+	font-weight: 400;
+	-webkit-transition: font-size .3s ease-in-out;
+	-moz-transition: font-size .3s ease-in-out;
+	-o-transition: font-size .3s ease-in-out;
+	transition: font-size .3s ease-in-out;
+	-webkit-transition: letter-spacing .3s ease-in-out;
+	-moz-transition: letter-spacing .3s ease-in-out;
+	-o-transition: letter-spacing .3s ease-in-out;
+	transition: letter-spacing .3s ease-in-out;
+
+	/**/
+}
+/*#nav ul li a:hover{
+	font-size: 1.1em;
+	letter-spacing:0.1em;
+}*/
+#nav ul li a span {
+	display: block;
+	padding: 30px 0 0 0;
+	font-family: '黑体';
+}
+#nav ul li a strong{
+		display: block;
+		font-size: 0.7em;
+		color: #6BDFFF;
+		font-weight: 400;
+		/*margin-top: 7px;*/
+		font-family: '黑体';
+	}
+#nav ul .about{
+	left: 0;
+}
+
+#nav ul .news{
+	left: 120px;
+}
+
+
+#nav ul .works{
+	left: 240px;
+}
+
+
+#nav ul .models{
+	right: 240px;
+}
+
+#nav ul .groups{
+	right: 120px;
+}
+
+#nav ul .teams{
+	right: 0;
+}
+#navBlack{
+	width: 100%;
+	height: 271px;
+	position: fixed;
+	top: 75px;
+	z-index: -10;
+	background: url(../img/gradual/u-d-2.png) repeat-x;
+}
+#navBlack2{
+	width: 100%;
+	height: 27px;
+	position: fixed;
+	top: 75px;
+	z-index: 10;
+	background: url(../img/gradual/u-d.png) repeat-x;
+}
+/*end nav*/
+
+#container{
+	width: 960px;
+	min-height:271px;
+	height: 100%;
+	margin: 75px auto auto auto;
+	/*height: 10000px;*/
+	background-attachment: fixed;
+	z-index: 0;
+	text-align: center;
+	/*background: gray;*/
+}
